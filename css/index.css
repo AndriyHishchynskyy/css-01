@@ -1,6 +1,38 @@
-h2{
-    color: #5C7BA9;
+body::before{
+    content:" ";
+    background-image: url("../images/main.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.75;
 }
-table, td, th, tr{
+body{
+    max-width: 1200px;
+    font-family: Roboto;
+    font-size: 18px;
+   
+}
+main {
+    
+    
+}
+li{
+    color: FEE781;
+}
+/*===============================
+table
+===============================*/
+td, tr,th {
     border: 1px solid black;
+}
+/*===============================
+icons
+================================*/
+.about-us p > img, .icon{
+    width: 40px;
+    height: 40px;
 }

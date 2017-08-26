@@ -1,0 +1,89 @@
+/*==========================================
+navigation
+==========================================*/
+.header-nav ul{
+    display: flex;
+    justify-content: flex-end; 
+}
+.footer-nav ul{
+    display: flex;
+    justify-content: space-around; 
+}
+ul > li{
+    list-style-type: none;
+    padding-left: 1.2em;
+}
+/*===========================================
+logo
+===========================================*/
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+header h1, img{
+    padding-left: 1.45em;
+}
+/*==============================================
+main
+===============================================*/
+.services p{
+    width: 50%;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align:center; 
+}
+
+main img{
+    width: 100%;
+    max-width: 1200px;
+}
+main h2{
+    padding-left: 1.65em;
+}
+.about-us{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+.about-us p {
+    padding-left: 1.45em;
+}
+/*=================================================
+table
+=================================================*/
+table{
+    width: 100%;
+}
+table ~ p {
+    display: flex;
+    align-items: center;
+}
+
+/*=================================================
+footer
+==================================================*/
+.contacts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contacts  p, a{
+    display: flex;
+    align-items: center;
+}
+.contacts img{
+    padding-right: 1.2em;
+}
+
+.icon{
+    padding-right: 1.2em;
+}
+/*=====================================
+responsive
+=====================================*/
+@media screen and (max-width: 720px) {

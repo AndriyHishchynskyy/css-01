@@ -5,66 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Star</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
     <header> 
-        <ul>
-            <li>About us</li>
-            <li>Our services</li>
-            <li>Prices</li>
-            <li>Contacts</li>
-        </ul>
+        <nav class = "header-nav">
+            <ul>
+                <li>About us</li>
+                <li>Our services</li>
+                <li>Prices</li>
+                <li>Contacts</li>
+            </ul>
+        </nav>
+    <div class = "logo">    
         <img src="images/star-icon.png" alt="star icon">
         <h1>
             Star<br>
             Cleaning company
         </h1>
-        <img src="images/main.jpg" alt="background image">
+    </div>    
     </header>
+    <main>    
         <h2>About us</h2>
-            <img src="images/painting-roll.png" alt="painting roll icon">
+         <section class="about-us"> 
             <p>
-               Star company, which is engaged in professional cleaning after repair. 
+                <img class = "icon" src="images/painting-roll.png" alt="painting roll icon">
+                Star company, which is engaged in professional cleaning after repair. 
             </p>
-             <img src="images/like.png" alt="thumb-up icon">
             <p>
+                <img class = "icon" src="images/like.png" alt="thumb-up icon">
                 Will provide You with services very qualitatively and quickly. 
             </p>
-             <img src="images/house.png" alt="house icon">
             <p>
+                <img class = "icon" src="images/house.png" alt="house icon">
                 Thanks to the experience and the best professionals, Your home will be in a great condition.                
             </p>
-             <img src="images/fast-delivery.png" alt="fast delivery icon">
             <p>
+                <img class = "icon" src="images/fast-delivery.png" alt="fast delivery icon">
                 At Your service we have mobile brigades who can come to Your order at a time convenient for You.
             </p>
-            <img src="images/garbage-bin.png" alt="garbage bin icon">
-           <p>
+            <p>
+                <img class = "icon" src="images/garbage-bin.png" alt="garbage bin icon">
                 Removal of construction waste
             </p>
-         <h2>Our services</h2>
-            <img src="images/cleaning-window.jpg" alt="cleaning window">
-            <p>
+        </section>    
+        <h2>Our services</h2>
+        <section class = "services">
+            <p class = "service window">
+                <img src="images/cleaning-window.jpg" alt="cleaning window">
                 Window washing and disassembly of obsolete film using the latest techniques and devices  
-            </p>   
-            <img src="images/cleaning-surfases.jpg" alt="cleaning surfases">
-            <p>
+            </p>  
+            <p class = "service surfases">
+                <img src="images/cleaning-surfases.jpg" alt="cleaning surfases">
                 Cleaning of all types of surfaces: marble granite of tile of wood and glass
             </p>
-            <img src="images/cleaning-floor.jpg" alt="cleaning floor">
-            <p>
-                Cleaning of a floor of any type  
+            <p class = "service floor">
+                <img src="images/cleaning-floor.jpg" alt="cleaning floor">
+                Cleaning  floor of any type  
             </p>
-            <img src="images/cleaning-bathroom.jpg" alt="cleaning bathroom">
-            <p>
+            <p class = "service bathroom">
+                <img src="images/cleaning-bathroom.jpg" alt="cleaning bathroom">
                 Washing the bathrooms    
             </p>
-            <img src="images/removal-rubbish.jpg" alt="removal rubbish">
-            <p>
+            <p class = "service rubbish">
+                <img src="images/removal-rubbish.jpg" alt="removal rubbish">
                 Removal of construction waste
             </p>
+        </section>
         <h2>Prices</h2>
             <p> 
                 Find out prices at the table
@@ -136,7 +146,7 @@
                         Removal of construction waste
                     </td>
                     <td>
-                        Cubic meters
+                        cubic meters
                     </td>
                     <td>
                         25 (Depending on pollution)
@@ -144,8 +154,8 @@
                 </tr>
             </tbody>
         </table>
-            <img src="images/telephone.png" alt="telephone">
-            <p>    
+            <p> 
+                <img class="icon" src="images/telephone.png" alt="telephone">
                 Or call our manager tel. +380975520731
             </p>
         <h2>Contacts</h2>
@@ -162,36 +172,39 @@
                 </label>
                 <br>
                <label>Your Message
-                    <input type="text" name="message" required placeholder="Your message">
+                    <textarea placeholder="Your message">
+                    </textarea>
                 </label>
                 <br>
                     <input type="reset">
                     <input type="submit">    
             </form>
+    </main>       
     <footer>
-         <h2>Contact us</h2>
+        <h2>Contact us</h2>
+        <div class = "contacts">   
             <a href="https://www.facebook.com/profile.php?id=100019246666920&pnref=friends.search"> 
+                <img class="icon" src="images/facebook.png" alt="facebook icon">
                 Our page in facebook
-                <img src="images/facebook.png" alt="facebook icon">
             </a>
-            <br>
-            <img src="images/telephone.png" alt="telephone"> 
             <p>
+                <img class="icon" src="images/telephone.png" alt="telephone">
                 Phone: +380975520731
-            <br>
-                Skype: hischynska
             </p>
-            <img src="images/location.png" alt="location">
             <p>
+                <img class="icon" src="images/location.png" alt="location">
                 Lviv, Kytayska 2, 95 str.
             </p>
-            
-         <ul>
-             <li>About us</li>
-             <li>Our services</li>
-             <li>Prices</li>
-             <li>Contacts</li>
-         </ul>
-    </footer>    
+        </div>
+          <nav class = "footer-nav">  
+             <ul>
+                 <li>About us</li>
+                 <li>Our services</li>
+                 <li>Prices</li>
+                 <li>Contacts</li>
+             </ul>
+        </nav>    
+    </footer>
+    
 </body>
 </html>
