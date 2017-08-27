@@ -21,27 +21,22 @@ logo
     justify-content: flex-start;
     align-items: flex-start;
 }
-header h1, img{
+footer h2, header h1, img{
     padding-left: 1.45em;
 }
 /*==============================================
 main
 ===============================================*/
-.services p{
-    width: 50%;
+.services div{
+    width: 100%;
 }
 .services{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    text-align:center; 
 }
 
-main img{
-    width: 100%;
-    max-width: 1200px;
-}
 main h2{
     padding-left: 1.65em;
 }
@@ -56,12 +51,31 @@ main h2{
 /*=================================================
 table
 =================================================*/
+
 table{
     width: 100%;
 }
 table ~ p {
     display: flex;
     align-items: center;
+}
+table ~ p{
+    padding-left: 1.45em;
+}
+/*=================================================
+form
+==================================================*/
+.form{
+    padding-left: 1.45em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.btn{
+    padding-left: 1.45em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /*=================================================
@@ -82,6 +96,9 @@ footer
 
 .icon{
     padding-right: 1.2em;
+}
+h2 ~ p{
+    padding-left: 1.45em;
 }
 /*=====================================
 responsive
