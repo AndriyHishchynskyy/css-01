@@ -1,3 +1,6 @@
+body{
+    margin: 0 auto;
+}
 /*===============================================
 icons
 ===============================================*/
@@ -34,17 +37,13 @@ footer h2, header h1, img{
 /*==============================================
 main
 ===============================================*/
-.services div{
-    width: 50%;
-}
 .services{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 50%;
 }
-
-
 main h2{
     display: block;
     padding-left: 1.65em;
