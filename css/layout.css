@@ -1,6 +1,13 @@
-/*==========================================
+/*===============================================
+icons
+===============================================*/
+.about-us p > img, .icon{
+    width: 40px;
+    height: 40px;
+}
+/*==============================================
 navigation
-==========================================*/
+==============================================*/
 .header-nav ul{
     display: flex;
     justify-content: flex-end; 
@@ -13,9 +20,9 @@ ul > li{
     list-style-type: none;
     padding-left: 1.2em;
 }
-/*===========================================
+/*===============================================
 logo
-===========================================*/
+===============================================*/
 .logo{
     display: flex;
     justify-content: flex-start;
@@ -62,7 +69,7 @@ table ~ p {
 table ~ p{
     padding-left: 1.45em;
 }
-/*=================================================
+/*==================================================
 form
 ==================================================*/
 .form{
@@ -100,7 +107,49 @@ footer
 h2 ~ p{
     padding-left: 1.45em;
 }
-/*=====================================
+/*===============================================
 responsive
-=====================================*/
+===============================================*/
 @media screen and (max-width: 720px) {
+    .logo h1{
+        font-size: 1.6em;
+    }
+    .logo img{
+        height: 100px;
+        width: 100px;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.85em;
+    }
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .services .window{
+        order: 1;
+    }
+    .services .surfases{
+        order: 2;
+    }
+    .services .floor{
+        order: 3;
+    }
+    .services .bathroom{
+        order: 4;
+    }
+    .services .rubbish{
+        order: 5;
+    }
+    .contacts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 450px) {
+    .header-nav, .footer-nav{
+        display: flex;
+        flex-direction: row;
+    }   
+}    
