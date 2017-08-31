@@ -53,7 +53,7 @@
             </p>
         </section>    
         <h2>Our services</h2>
-        <section class = "services">
+        <section class = "services horizontal-scroll-wrapper">
             <div  class = "service window">
                 <img src="images/cleaning-window.jpg" alt="cleaning window">
                 <p>
@@ -85,6 +85,7 @@
                 </p>
             </div>    
         </section>
+        <div>
         <h2>Prices</h2>
             <p> 
                 Find out prices at the table
@@ -176,13 +177,13 @@
             <form method="POST" action="https://formspree.io/andriyhischynskyy@gmail.com">
                 <div class = "form">
                 <label>Your Name
-                    <input type="text" name="user-name" required placeholder="Your Name">
+                    <input id="user-name" type="text" name="user-name" required placeholder="Your Name">
                 </label>
                 <label>Your Email Address
-                    <input type="email" name="user-email" required placeholder="your@email.address">
+                    <input id="user-email" type="email" name="user-email" required placeholder="your@email.address">
                 </label>
                 <label>Your Message
-                    <textarea placeholder="Your message">
+                    <textarea id="message" placeholder="Your message">
                     </textarea>
                 </label>
                 </div>
@@ -190,6 +191,8 @@
                     <input type="reset">
                     <input type="submit">    
                 </div>
+                <h4 id="thanks" hidden>Form is sent</h4>
+                <h4 id="incorrect" hidden>Form is incorrect!</h4>
             </form>
     </main>       
     <footer>
@@ -217,6 +220,11 @@
              </ul>
         </nav>    
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="java-script/index.js"></script>
     
 </body>
 </html>

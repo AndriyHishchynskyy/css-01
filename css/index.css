@@ -29,9 +29,39 @@ tr, th, td{
     border-right: none;
     border: 1px solid black;
 }
-/*===============================
+/*==================================================
+form
+==================================================*/
+.form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+input[type = "submit"], input[type = "reset"]{
+    width: 25%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-left: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: #45a049;
+}
+input[type = "reset"]:hover{
+    background-color: #767676;
+}
+input[type = "submit"]{
+    background-color: #4CAF50;
+}
+input[type = "reset"]{
+    background-color: #C0C8CA;
+}
+/*================================================
 nav
-================================*/
+==================================================*/
 .footer-nav, .header-nav{
     background-color: #DCE7F0;
 }
