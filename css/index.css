@@ -1,5 +1,5 @@
 /*body::before{*/
-/*    content:" ";*/
+/*    content:"";*/
 /*    background-image: url("../images/main.jpg");*/
 /*    background-attachment: fixed;*/
 /*    background-size: cover;*/
@@ -16,7 +16,15 @@ body{
     font-family: Roboto;
     font-size: 1.1em;
     line-height: 1.8em;
-    
+}
+/*================================================
+nav
+==================================================*/
+.footer-nav, .header-nav{
+    background-color: #DCE7F0;
+}
+.header-nav li{
+    padding-left: 1.2em;
 }
 /*===============================
 table
@@ -24,10 +32,10 @@ table
 table{
     background-color: #DCE7F0;
     border-collapse: collapse;
+    text-align: center;
 }
-tr, th, td{
-    border-right: none;
-    border: 1px solid black;
+table, th, td {
+   border: 1px solid black;
 }
 /*==================================================
 form
@@ -47,21 +55,29 @@ input[type = "submit"], input[type = "reset"]{
     border-radius: 4px;
     cursor: pointer;
 }
-input[type=submit]:hover{
-    background-color: #45a049;
-}
-input[type = "reset"]:hover{
-    background-color: #767676;
-}
 input[type = "submit"]{
     background-color: #4CAF50;
+}
+input[type=submit]:hover{
+    background-color: #45a049;
 }
 input[type = "reset"]{
     background-color: #C0C8CA;
 }
-/*================================================
-nav
-==================================================*/
-.footer-nav, .header-nav{
-    background-color: #DCE7F0;
+input[type = "reset"]:hover{
+    background-color: #767676;
+}
+h3{
+    text-align: center;
+    background-color: #f2f2f2; 
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}
+.sucses{
+    color: #45a049; 
+}
+.failed{
+    color: #767676;
 }

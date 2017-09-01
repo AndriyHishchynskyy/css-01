@@ -8,12 +8,21 @@ icons
     width: 40px;
     height: 40px;
 }
+/*===============================================
+logo
+===============================================*/
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 /*==============================================
 navigation
 ==============================================*/
 .header-nav ul{
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
+    padding-left: 1.2em;
 }
 .footer-nav ul{
     display: flex;
@@ -21,30 +30,15 @@ navigation
 }
 ul > li{
     list-style-type: none;
-    padding-left: 1.2em;
 }
-/*===============================================
-logo
-===============================================*/
-.logo{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-footer h2, header h1, img{
-    padding-left: 1.45em;
-}
-
 /*==============================================
-horizontal scrol wraper
-===============================================*/
-
-/*==============================================
-main
+about us
 ===============================================*/
 main h2{
-    display: block;
-    padding-left: 1.4em;
+    padding-left: 2.3em;
+}
+main p{
+    padding-left: 1.9em;
 }
 .about-us{
     display: flex;
@@ -54,8 +48,29 @@ main h2{
 .about-us p {
     padding-left: 1.45em;
 }
-main p{
-    padding-left: 1.9em;
+
+/*==============================================
+------------------------------------------------
+horizontal scrol wraper
+-------------------------------------------------
+===============================================*/
+body > main > ul{
+    margin: 0;
+    padding: 0;
+}
+/*===============================================
+div elements
+===============================================*/
+.service{
+    width: 100%;
+}
+.service img{
+    width: 100%;
+}
+.service p {
+    text-align: center;
+    margin-top: -0.6em;
+    padding: 0;
 }
 /*=================================================
 table
@@ -66,37 +81,54 @@ table{
 /*==================================================
 form
 ==================================================*/
-.form label{
+.form {
      display: block;
-     width: 60%;
-     padding: 0 15%;  /*not good*/
+     width: 65%;
+     margin: 0 auto;
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
 }
 label input, textarea{
     width: 100%;
 }
 .btn{
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
+    width: auto;
+    margin: 0 auto;
 }
 /*=================================================
 footer
 ==================================================*/
+footer > h2{
+    padding-left: 2.3em; 
+}
 .contacts{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.contacts img{
-    padding-right: 1.2em;
-}
-.icon{
-    padding-right: 1.2em;
+.icon,.contacts img{
+    padding: 0 1.2em 0 1.8em;
 }
 /*===============================================
 responsive
 ===============================================*/
 @media screen and (max-width: 750px) {
+    /*=============================
+    no slider
+    ==============================*/
+    .service{
+        width: 100%;
+    }
+    .service img{
+        width: 100%;
+    }
+    .service p {
+        text-align: center;
+        margin-top: -0.6em;
+    }
+    /*===========================*/
     .logo h1{
         font-size: 1.6em;
     }
@@ -104,48 +136,59 @@ responsive
         height: 100px;
         width: 100px;
     }
+    /*============================*/
     .services div{
         width: 100%;
     }
-    .services{
+    /*=============================*/
+    .form{
+        width: inherit;
+    }
+    .btn{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn input[type = "submit"], 
+    .btn input[type = "reset"]{
         width: 100%;
     }
-    .services .window{
-        order: 1;
-    }
-    .services .surfases{
-        order: 2;
-    }
-    .services .floor{
-        order: 3;
-    }
-    .services .bathroom{
-        order: 4;
-    }
-    .services .rubbish{
-        order: 5;
-    }
-     .btn{
-        display: block;
-        width: 100%;
-    }
+    /*==============================*/
     .contacts{
         display: flex;
         flex-wrap: wrap;
     }
-    /*input[type = "submit"], input[type = "reset"]{*/
-    /*width: 100%;*/
-    /*}*/
+    /*===============================*/
+    .footer-nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }  
+}
+p, h1, h2{
+    width: 100%;
 }
 @media screen and (max-width: 450px) {
+   /*=============================
+    no slider
+    ==============================*/
+    .service{
+        width: 100%;
+    }
+    .service img{
+        width: 100%;
+    }
+    .service p {
+        text-align: center;
+        margin-top: -0.6em;
+    }
+    /*=============================*/
    .form{
      margin: 0 auto;
    }
    .contacts img{
        display: flex;
-       justify-content: center;
+       flex-direction: column;
    }
    .contacts a, p{
        width: 100%;
@@ -157,4 +200,7 @@ responsive
         flex-direction: column;
         align-items: center;
     }  
+    p, h1, h2{
+    width: 100%;
+    }
 }    

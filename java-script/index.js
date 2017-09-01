@@ -10,14 +10,11 @@ function sendData(e){
     $.ajax({
         url:"https://formspree.io/andriyhischynskyy@gmail.com",
         method: "POST",
-        data:{ 
-            $('form').serializeArray(),
-            $('textarea').val()
-        }
+        data: $('form').serializeArray(),
         dataType: "json"
-    })
+    }) 
     .done(function(){
         $('form')[0].reset();
-        $('#thanks')[0].show();
+        $('#thanks').show();
         });
 }
