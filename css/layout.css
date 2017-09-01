@@ -165,9 +165,6 @@ responsive
         align-items: center;
     }  
 }
-p, h1, h2{
-    width: 100%;
-}
 @media screen and (max-width: 450px) {
    /*=============================
     no slider
@@ -191,7 +188,6 @@ p, h1, h2{
        flex-direction: column;
    }
    .contacts a, p{
-       width: 100%;
        display: flex;
        justify-content: center;
    }
@@ -200,7 +196,4 @@ p, h1, h2{
         flex-direction: column;
         align-items: center;
     }  
-    p, h1, h2{
-    width: 100%;
-    }
 }    
