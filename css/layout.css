@@ -15,13 +15,15 @@ logo
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 2.3em;
+    padding-top: 1.8em;
+    padding-bottom:1.4em;
 }
 /*==============================================
 navigation
 ==============================================*/
-.header-nav ul{
-    display: flex;
-    justify-content: flex-end;
+body > header > nav{
+   float: right;
     padding-left: 1.2em;
 }
 .footer-nav ul{
@@ -48,12 +50,6 @@ main p{
 .about-us p {
     padding-left: 1.45em;
 }
-
-/*==============================================
-------------------------------------------------
-horizontal scrol wraper
--------------------------------------------------
-===============================================*/
 body > main > ul{
     margin: 0;
     padding: 0;
@@ -69,7 +65,6 @@ div elements
 }
 .service p {
     text-align: center;
-    margin-top: -0.6em;
     padding: 0;
 }
 /*=================================================
@@ -83,12 +78,12 @@ form
 ==================================================*/
 .form {
      display: block;
-     width: 65%;
+     width: 70%;
      margin: 0 auto;
 }
 .btn{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 label input, textarea{
     width: 100%;
@@ -108,8 +103,17 @@ footer > h2{
     justify-content: space-around;
     align-items: center;
 }
-.icon,.contacts img{
+.ico,.contacts img{
     padding: 0 1.2em 0 1.8em;
+}
+body > footer > div > a{
+    color: #4267b2;
+}
+/*================================================
+icons
+================================================*/
+.ico ::after, ::before {
+    content:" ";
 }
 /*===============================================
 responsive
@@ -118,7 +122,7 @@ responsive
     /*=============================
     no slider
     ==============================*/
-    .service{
+    .services{
         width: 100%;
     }
     .service img{

@@ -1,21 +1,17 @@
-/*body::before{*/
-/*    content:"";*/
-/*    background-image: url("../images/main.jpg");*/
-/*    background-attachment: fixed;*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-/*    height: 100vh;*/
-/*    width: 100vw;*/
-/*    position: fixed;*/
-/*    z-index: -1;*/
-/*    opacity: 0.75;*/
-/*}*/
 body{
     max-width: 1024px;
     width: 100%;
     font-family: Roboto;
     font-size: 1.1em;
     line-height: 1.8em;
+}
+a{
+    text-decoration: none;
+    color: #767676;
+}
+a:hover{
+    text-decoration: none;
+    color: #C0C8CA;
 }
 /*================================================
 nav
@@ -36,6 +32,9 @@ table{
 }
 table, th, td {
    border: 1px solid black;
+}
+th{
+    text-align: center;
 }
 /*==================================================
 form
